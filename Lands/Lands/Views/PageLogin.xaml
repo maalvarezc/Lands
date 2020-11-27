@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lands.Views.PageLogin"
              BindingContext="{Binding Main, Source={StaticResource Locator}}"
-             Title="Lands">
+             Title="Login">
     <ContentPage.Content>   
         <ScrollView
             BindingContext="{Binding Login}">
@@ -57,7 +57,7 @@
                     </Label>
                     <Switch
                         HorizontalOptions="End"
-                        IsToggled="{Binding isRemember, Mode=TwoWay}">
+                        IsToggled="{Binding IsRemember, Mode=TwoWay}">
                     </Switch>
                 </StackLayout>
                     <Label
@@ -84,6 +84,7 @@
                         BackgroundColor="Purple"
                         BorderRadius="23"
                         TextColor="White"
+                        IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
                         Text="Register">
                     </Button>
                 </StackLayout>
